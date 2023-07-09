@@ -1,0 +1,30 @@
+﻿@model ProductWebApp.Models.Product
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetAllProducts2</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+                <td>Description</td>
+            </tr>
+            <tr>
+                <td>@Model.Id</td>
+                <td>@Model.Name</td>
+                <td>@Model.Description</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

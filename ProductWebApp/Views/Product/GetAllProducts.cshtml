@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetAllProducts</title>
+</head>
+<body>
+    <div>
+        <h1>GetAll Products View.</h1>
+        <br />
+        <h5>from View Data @Convert.ToInt32(ViewData["count"]);</h5>
+        <h5>from View Data @Convert.ToString(ViewData["countryname"]);</h5>
+        @{
+            ProductWebApp.Models.Product prod = (ProductWebApp.Models.Product)ViewData["product"];
+
+            <h3>Product id @prod.Id</h3>
+            <h3>Product id @prod.Name</h3>
+            <h3>Product id @prod.Description</h3>
+        }
+
+        <h2>ViewBag data</h2>
+        @{
+                <h4>ViewBag count value @ViewBag.count</h4>
+            ProductWebApp.Models.Product prod1 = (ProductWebApp.Models.Product)ViewBag.product;
+
+            <h3>Product id @prod1.Id</h3>
+            <h3>Product id @prod1.Name</h3>
+            <h3>Product id @prod1.Description</h3>
+        }
+        <input type="text" id="txtusername" value= @ViewBag.count/> <br />
+        <input type="button" value="Create" id="btnCreate" />
+
+        @for (int i = 0; i < 10; i++)
+        {
+            <li>@i</li>
+        }
+    </div>
+</body>
+</html>

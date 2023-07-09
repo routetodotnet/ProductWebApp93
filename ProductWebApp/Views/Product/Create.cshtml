@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <div> 
+        <form action="/Product/CreateSubmit3" method="post">
+
+           ID: <input type="text" id="txtid" name="Id" /><br />
+          Name:  <input type="text" id="txtusername" name="Username" /><br />
+           Description: <input type="text" id="txtDes" name="Description" /><br />
+            <input type="submit" id="btnSubmit" />
+
+            @Html.TextBox("email")
+            
+            
+        </form>
+    </div>
+</body>
+</html>
