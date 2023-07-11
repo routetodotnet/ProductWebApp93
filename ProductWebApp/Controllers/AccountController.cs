@@ -8,13 +8,10 @@ namespace ProductWebApp.Controllers
 {
     public class AccountController : Controller
     {
-        //ADO.net
-        //SQL -
-        //ADO.net manual -1/2
-        //7 Pm EntityFramework.
 
 
-        // GET: Account
+
+        // GET: Account/GetAllAccount
         public ActionResult GetAllAccount()
         {
             //
