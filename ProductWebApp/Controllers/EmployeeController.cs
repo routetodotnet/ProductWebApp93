@@ -55,7 +55,7 @@ namespace ProductWebApp.Controllers
             return View();
         }
 
-        [Authorize]
+        //[Authorize]
         // GET: Employee/Create
         public ActionResult Create()
         {

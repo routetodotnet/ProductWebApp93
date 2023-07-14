@@ -12,19 +12,13 @@
     <title>GetAllProducts2</title>
 </head>
 <body>
-    <div>
-        <table>
-            <tr>
-                <td>Id</td>
-                <td>Name</td>
-                <td>Description</td>
-            </tr>
-            <tr>
-                <td>@Model.Id</td>
-                <td>@Model.Name</td>
-                <td>@Model.Description</td>
-            </tr>
-        </table>
-    </div>
+
+    <h2>rendering from partial..</h2>
+    @Html.Partial("PartialProductDetails", (ProductWebApp.Models.Product)ViewBag.Prod1)
+   
+    <h4> product 2 display</h4>
+    @{ 
+        Html.RenderPartial("PartialProductDetails", (ProductWebApp.Models.Product)ViewBag.Prod2);
+     }
 </body>
 </html>

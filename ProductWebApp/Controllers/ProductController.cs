@@ -63,6 +63,19 @@ namespace ProductWebApp.Controllers
             product.Description = "model product desc";
             product.Id = 1;
 
+            Product product1 = new Product();
+            product1.Name = "aaaaC";
+            product1.Description = "Product 1 details.";
+            product1.Id =11;
+
+            Product product2 = new Product();
+            product2.Name = "cccc";
+            product2.Description = "Product 2  details.";
+            product2.Id = 222;
+
+            ViewBag.Prod1 = product1;
+            ViewBag.Prod2 = product2;
+
             //return View("ABC");
             //@Model -String
 
